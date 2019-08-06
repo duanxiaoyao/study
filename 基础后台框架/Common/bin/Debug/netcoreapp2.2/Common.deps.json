@@ -1,0 +1,188 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v2.2",
+    "signature": "40b4e1f7818d6cdbe895f6bfb52eed3d38a416b3"
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v2.2": {
+      "Common/1.0.0": {
+        "dependencies": {
+          "Dapper": "1.60.6",
+          "Enums.NET": "2.3.2",
+          "NLog": "4.6.6",
+          "NLog.Extensions.Logging": "1.5.2",
+          "Pomelo.EntityFrameworkCore.MySql": "2.2.0",
+          "Swashbuckle.AspNetCore.Swagger": "4.0.1",
+          "Swashbuckle.AspNetCore.SwaggerGen": "4.0.1"
+        },
+        "runtime": {
+          "Common.dll": {}
+        }
+      },
+      "Dapper/1.60.6": {
+        "dependencies": {
+          "System.Reflection.TypeExtensions": "4.4.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Dapper.dll": {
+            "assemblyVersion": "1.60.0.0",
+            "fileVersion": "1.60.6.27094"
+          }
+        }
+      },
+      "Enums.NET/2.3.2": {
+        "runtime": {
+          "lib/netstandard2.0/Enums.NET.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.3.2.0"
+          }
+        }
+      },
+      "MySqlConnector/0.49.2": {
+        "runtime": {
+          "lib/netcoreapp2.1/MySqlConnector.dll": {
+            "assemblyVersion": "0.49.2.0",
+            "fileVersion": "0.49.2.0"
+          }
+        }
+      },
+      "NLog/4.6.6": {
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.6.6.10303"
+          }
+        }
+      },
+      "NLog.Extensions.Logging/1.5.2": {
+        "dependencies": {
+          "NLog": "4.6.6"
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.Extensions.Logging.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.5.2.1050"
+          }
+        }
+      },
+      "Pomelo.EntityFrameworkCore.MySql/2.2.0": {
+        "dependencies": {
+          "MySqlConnector": "0.49.2",
+          "Pomelo.JsonObject": "2.2.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Pomelo.EntityFrameworkCore.MySql.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        }
+      },
+      "Pomelo.JsonObject/2.2.0": {
+        "runtime": {
+          "lib/netstandard2.0/Pomelo.JsonObject.dll": {
+            "assemblyVersion": "2.2.0.0",
+            "fileVersion": "2.2.0.0"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/4.0.1": {
+        "runtime": {
+          "lib/netstandard2.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.0.1.0"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/4.0.1": {
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "4.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "assemblyVersion": "4.0.1.0",
+            "fileVersion": "4.0.1.0"
+          }
+        }
+      },
+      "System.Reflection.TypeExtensions/4.4.0": {}
+    }
+  },
+  "libraries": {
+    "Common/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Dapper/1.60.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-mmnJNhKMeF2KhvVXDoVQlFxre8aJAo71YBJrKqFlvuqzYC2QiXUq94/GCDBJzU7paq4GqpkV2glw3308TcGibw==",
+      "path": "dapper/1.60.6",
+      "hashPath": "dapper.1.60.6.nupkg.sha512"
+    },
+    "Enums.NET/2.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rIPr6Ac8eu/j8p7j2NM2R+8aYj4vn1Yl6aiReX0srWYw4Jw/q/RmNThKyzIizzE8UJO6KWDZKrzPD9giD5u/ow==",
+      "path": "enums.net/2.3.2",
+      "hashPath": "enums.net.2.3.2.nupkg.sha512"
+    },
+    "MySqlConnector/0.49.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-2T3TB//uQatJVYggH/gcMRyUA+y9MDOBHZwL+Ygd8mboTvJ/pyfINcz+B/oGiHTaWxHa6xcf8j4BTiuxKaTy9A==",
+      "path": "mysqlconnector/0.49.2",
+      "hashPath": "mysqlconnector.0.49.2.nupkg.sha512"
+    },
+    "NLog/4.6.6": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-QKnuNsfXpdL0u5oP37c2tSERjx1Zgt7uQD5n1H8oIxbMTUiha4NZYWc8vStCueMMmIyTWhI+lTle73/DMpDMYw==",
+      "path": "nlog/4.6.6",
+      "hashPath": "nlog.4.6.6.nupkg.sha512"
+    },
+    "NLog.Extensions.Logging/1.5.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Z2BhrFb2T+WxgJF86vSBdRSdtGrgPGG5X5o9Z+QnPHWsS8bFN7LkHP+eiDizku27f4x0pe7fLSlq2A8OjyBeyw==",
+      "path": "nlog.extensions.logging/1.5.2",
+      "hashPath": "nlog.extensions.logging.1.5.2.nupkg.sha512"
+    },
+    "Pomelo.EntityFrameworkCore.MySql/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-wSZfJiDhN4DX4X8tYeUCuP9L/9P0w8Q155dHRDBSvi7XxUPFnZYsRk1o9QiJm/Z+2LmZ4ad9Q4mJJ4L0vo6BlA==",
+      "path": "pomelo.entityframeworkcore.mysql/2.2.0",
+      "hashPath": "pomelo.entityframeworkcore.mysql.2.2.0.nupkg.sha512"
+    },
+    "Pomelo.JsonObject/2.2.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-kAH3WjIyzHvSjYEQ4h63WJLtpA9PfbgOdEIalL668KvDo3PIlT/2lSFMhXXGrYgGcD1bthszXXs7BASooRXZgA==",
+      "path": "pomelo.jsonobject/2.2.0",
+      "hashPath": "pomelo.jsonobject.2.2.0.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.Swagger/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-rqzS3vHrjz+tR5j0nZOKZyaMTDfLGbVYkwMq205aYuGbsiGwbOlNU0Q8lq4Q0ptQPMKVkUf8XouCIdJ3qpK17w==",
+      "path": "swashbuckle.aspnetcore.swagger/4.0.1",
+      "hashPath": "swashbuckle.aspnetcore.swagger.4.0.1.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/4.0.1": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ztAj0T1U+2AqQNA8b+nr8yVkDW9XzNaAfez6d1jO13sdn2A/JW5Syn9TThsakrHxYNLt6y6aQCXbyBfQXpcQwA==",
+      "path": "swashbuckle.aspnetcore.swaggergen/4.0.1",
+      "hashPath": "swashbuckle.aspnetcore.swaggergen.4.0.1.nupkg.sha512"
+    },
+    "System.Reflection.TypeExtensions/4.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-dkmh/ySlwnXJp/1qYP9uyKkCK1CXR/REFzl7abHcArxBcV91mY2CgrrzSRA5Z/X4MevJWwXsklGRdR3A7K9zbg==",
+      "path": "system.reflection.typeextensions/4.4.0",
+      "hashPath": "system.reflection.typeextensions.4.4.0.nupkg.sha512"
+    }
+  }
+}

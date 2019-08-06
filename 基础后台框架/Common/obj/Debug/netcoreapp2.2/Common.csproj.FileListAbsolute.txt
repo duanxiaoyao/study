@@ -1,0 +1,11 @@
+C:\Users\Administrator\Desktop\基础后台框架\Common\bin\Debug\netcoreapp2.2\Common.deps.json
+C:\Users\Administrator\Desktop\基础后台框架\Common\bin\Debug\netcoreapp2.2\Common.dll
+C:\Users\Administrator\Desktop\基础后台框架\Common\obj\Debug\netcoreapp2.2\Common.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\基础后台框架\Common\obj\Debug\netcoreapp2.2\Common.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\基础后台框架\Common\obj\Debug\netcoreapp2.2\Common.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\基础后台框架\Common\obj\Debug\netcoreapp2.2\Common.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\基础后台框架\Common\bin\Debug\netcoreapp2.2\Common.pdb
+C:\Users\Administrator\Desktop\基础后台框架\Common\obj\Debug\netcoreapp2.2\Common.dll
+C:\Users\Administrator\Desktop\基础后台框架\Common\obj\Debug\netcoreapp2.2\Common.pdb
+C:\Users\Administrator\Desktop\基础后台框架\Common\bin\Debug\netcoreapp2.2\Common.runtimeconfig.json
+C:\Users\Administrator\Desktop\基础后台框架\Common\bin\Debug\netcoreapp2.2\Common.runtimeconfig.dev.json

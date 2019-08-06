@@ -1,0 +1,10 @@
+C:\Users\Administrator\Desktop\基础后台框架\Angel.Model\bin\Debug\netcoreapp2.2\Angel.Model.deps.json
+C:\Users\Administrator\Desktop\基础后台框架\Angel.Model\bin\Debug\netcoreapp2.2\Angel.Model.dll
+C:\Users\Administrator\Desktop\基础后台框架\Angel.Model\bin\Debug\netcoreapp2.2\Angel.Model.pdb
+C:\Users\Administrator\Desktop\基础后台框架\Angel.Model\obj\Debug\netcoreapp2.2\Angel.Model.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\基础后台框架\Angel.Model\obj\Debug\netcoreapp2.2\Angel.Model.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\基础后台框架\Angel.Model\obj\Debug\netcoreapp2.2\Angel.Model.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\基础后台框架\Angel.Model\obj\Debug\netcoreapp2.2\Angel.Model.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\基础后台框架\Angel.Model\obj\Debug\netcoreapp2.2\Angel.Model.dll
+C:\Users\Administrator\Desktop\基础后台框架\Angel.Model\obj\Debug\netcoreapp2.2\Angel.Model.pdb
+C:\Users\Administrator\Desktop\基础后台框架\Angel.Model\bin\Debug\netcoreapp2.2\Angel.Model.xml

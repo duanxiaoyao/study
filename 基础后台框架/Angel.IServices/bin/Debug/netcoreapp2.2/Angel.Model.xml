@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Angel.Model</name>
+    </assembly>
+    <members>
+        <member name="T:Angel.Model.Dto.LoginDto">
+            <summary>
+            账号实体
+            </summary>
+        </member>
+        <member name="P:Angel.Model.Dto.LoginDto.Id">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Angel.Model.Dto.LoginDto.LoginCode">
+            <summary>
+            登陆账号
+            </summary>
+        </member>
+        <member name="P:Angel.Model.Dto.LoginDto.PassWord">
+            <summary>
+            登录密码
+            </summary>
+        </member>
+        <member name="P:Angel.Model.Dto.LoginDto.Phone">
+            <summary>
+            电话号码
+            </summary>
+        </member>
+        <member name="P:Angel.Model.Dto.LoginDto.DateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+        <member name="T:Angel.Model.Query.LoginQuery">
+            <summary>
+            账号查询对象
+            </summary>
+        </member>
+        <member name="P:Angel.Model.Query.LoginQuery.Id">
+            <summary>
+            用户ID
+            </summary>
+        </member>
+        <member name="P:Angel.Model.Query.LoginQuery.LoginCode">
+            <summary>
+            登陆账号
+            </summary>
+        </member>
+        <member name="P:Angel.Model.Query.LoginQuery.PassWord">
+            <summary>
+            登录密码
+            </summary>
+        </member>
+        <member name="P:Angel.Model.Query.LoginQuery.Phone">
+            <summary>
+            电话号码
+            </summary>
+        </member>
+        <member name="P:Angel.Model.Query.LoginQuery.DateTime">
+            <summary>
+            创建时间
+            </summary>
+        </member>
+    </members>
+</doc>

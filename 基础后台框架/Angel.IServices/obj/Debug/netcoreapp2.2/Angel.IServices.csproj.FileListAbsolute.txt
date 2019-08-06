@@ -1,0 +1,13 @@
+C:\Users\Administrator\Desktop\基础后台框架\Angel.IServices\bin\Debug\netcoreapp2.2\Angel.IServices.deps.json
+C:\Users\Administrator\Desktop\基础后台框架\Angel.IServices\bin\Debug\netcoreapp2.2\Angel.IServices.dll
+C:\Users\Administrator\Desktop\基础后台框架\Angel.IServices\bin\Debug\netcoreapp2.2\Angel.IServices.pdb
+C:\Users\Administrator\Desktop\基础后台框架\Angel.IServices\bin\Debug\netcoreapp2.2\Angel.Model.dll
+C:\Users\Administrator\Desktop\基础后台框架\Angel.IServices\bin\Debug\netcoreapp2.2\Angel.Model.pdb
+C:\Users\Administrator\Desktop\基础后台框架\Angel.IServices\obj\Debug\netcoreapp2.2\Angel.IServices.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\基础后台框架\Angel.IServices\obj\Debug\netcoreapp2.2\Angel.IServices.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\基础后台框架\Angel.IServices\obj\Debug\netcoreapp2.2\Angel.IServices.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\基础后台框架\Angel.IServices\obj\Debug\netcoreapp2.2\Angel.IServices.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\基础后台框架\Angel.IServices\obj\Debug\netcoreapp2.2\Angel.IServices.csproj.CopyComplete
+C:\Users\Administrator\Desktop\基础后台框架\Angel.IServices\obj\Debug\netcoreapp2.2\Angel.IServices.dll
+C:\Users\Administrator\Desktop\基础后台框架\Angel.IServices\obj\Debug\netcoreapp2.2\Angel.IServices.pdb
+C:\Users\Administrator\Desktop\基础后台框架\Angel.IServices\bin\Debug\netcoreapp2.2\Angel.Model.xml

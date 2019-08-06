@@ -1,0 +1,15 @@
+C:\Users\Administrator\Desktop\基础后台框架\HisInterface\bin\Debug\netcoreapp2.2\HisInterface.xml
+C:\Users\Administrator\Desktop\基础后台框架\HisInterface\bin\Debug\netcoreapp2.2\I'm yy.deps.json
+C:\Users\Administrator\Desktop\基础后台框架\HisInterface\bin\Debug\netcoreapp2.2\I'm yy.runtimeconfig.json
+C:\Users\Administrator\Desktop\基础后台框架\HisInterface\bin\Debug\netcoreapp2.2\I'm yy.runtimeconfig.dev.json
+C:\Users\Administrator\Desktop\基础后台框架\HisInterface\bin\Debug\netcoreapp2.2\I'm yy.dll
+C:\Users\Administrator\Desktop\基础后台框架\HisInterface\bin\Debug\netcoreapp2.2\I'm yy.pdb
+C:\Users\Administrator\Desktop\基础后台框架\HisInterface\obj\Debug\netcoreapp2.2\I'm yy.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\基础后台框架\HisInterface\obj\Debug\netcoreapp2.2\I'm yy.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\基础后台框架\HisInterface\obj\Debug\netcoreapp2.2\I'm yy.RazorAssemblyInfo.cache
+C:\Users\Administrator\Desktop\基础后台框架\HisInterface\obj\Debug\netcoreapp2.2\I'm yy.RazorAssemblyInfo.cs
+C:\Users\Administrator\Desktop\基础后台框架\HisInterface\obj\Debug\netcoreapp2.2\I'm yy.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\基础后台框架\HisInterface\obj\Debug\netcoreapp2.2\I'm yy.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\基础后台框架\HisInterface\obj\Debug\netcoreapp2.2\I'm yy.RazorTargetAssemblyInfo.cache
+C:\Users\Administrator\Desktop\基础后台框架\HisInterface\obj\Debug\netcoreapp2.2\I'm yy.dll
+C:\Users\Administrator\Desktop\基础后台框架\HisInterface\obj\Debug\netcoreapp2.2\I'm yy.pdb

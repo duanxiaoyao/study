@@ -1,0 +1,59 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Angel</name>
+    </assembly>
+    <members>
+        <member name="T:HisInterface.Controllers.Login.LoginController">
+            <summary>
+            账号服务
+            </summary>
+        </member>
+        <member name="M:HisInterface.Controllers.Login.LoginController.#ctor(Angel.IServices.ILoginServices)">
+            <summary>
+            构造函数 
+            </summary>
+            <param name="loginServices"></param>
+        </member>
+        <member name="M:HisInterface.Controllers.Login.LoginController.UserExist(System.String)">
+            <summary>
+            注册账号是否存在
+            </summary>
+            <param name="LoginCode">账号</param>
+            <returns></returns>
+        </member>
+        <member name="M:HisInterface.Controllers.Login.LoginController.CheckUser(Angel.Model.Query.LoginQuery)">
+            <summary>
+            账号登陆验证
+            </summary>
+            <param name="loginQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HisInterface.Controllers.Login.LoginController.Register(Angel.Model.Query.LoginQuery)">
+            <summary>
+            账号注册
+            </summary>
+            <param name="loginQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:HisInterface.Controllers.Login.LoginController.PhoneCode(Angel.Model.Query.LoginQuery)">
+            <summary>
+            获取手机验证码
+            </summary>
+            <param name="loginQuery"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Angel.Startup.UseSandSwaggerUI(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            加载SwaggerUI
+            </summary>
+            <param name="app"></param>
+        </member>
+        <member name="M:Angel.StartupExtension.AddSwaggerGenConfig(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            添加swagger
+            </summary>
+            <param name="services"></param>
+        </member>
+    </members>
+</doc>
