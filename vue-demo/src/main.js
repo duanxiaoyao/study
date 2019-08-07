@@ -3,7 +3,7 @@
 import Vue from 'vue'
 import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
-import axios from 'axios'
+import Axios from 'axios'
 
 import '@/icons' // icon
 
@@ -11,8 +11,7 @@ import App  from './App'
 import router from './router'
 
 Vue.use(ElementUI)
-
-Vue.prototype.$http = axios
+Vue.prototype.$http = Axios
 Vue.config.productionTip = false
 
 /* eslint-disable no-new */

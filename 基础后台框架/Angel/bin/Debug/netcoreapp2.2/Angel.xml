@@ -4,39 +4,39 @@
         <name>Angel</name>
     </assembly>
     <members>
-        <member name="T:HisInterface.Controllers.Login.LoginController">
+        <member name="T:Angel.Controllers.Login.LoginController">
             <summary>
             账号服务
             </summary>
         </member>
-        <member name="M:HisInterface.Controllers.Login.LoginController.#ctor(Angel.IServices.ILoginServices)">
+        <member name="M:Angel.Controllers.Login.LoginController.#ctor(Angel.IServices.ILogin.ILoginServices)">
             <summary>
             构造函数 
             </summary>
             <param name="loginServices"></param>
         </member>
-        <member name="M:HisInterface.Controllers.Login.LoginController.UserExist(System.String)">
+        <member name="M:Angel.Controllers.Login.LoginController.UserExist(System.String)">
             <summary>
             注册账号是否存在
             </summary>
             <param name="LoginCode">账号</param>
             <returns></returns>
         </member>
-        <member name="M:HisInterface.Controllers.Login.LoginController.CheckUser(Angel.Model.Query.LoginQuery)">
+        <member name="M:Angel.Controllers.Login.LoginController.CheckUser(Angel.Model.Query.LoginQuery)">
             <summary>
             账号登陆验证
             </summary>
             <param name="loginQuery"></param>
             <returns></returns>
         </member>
-        <member name="M:HisInterface.Controllers.Login.LoginController.Register(Angel.Model.Query.LoginQuery)">
+        <member name="M:Angel.Controllers.Login.LoginController.Register(Angel.Model.Query.LoginQuery)">
             <summary>
             账号注册
             </summary>
             <param name="loginQuery"></param>
             <returns></returns>
         </member>
-        <member name="M:HisInterface.Controllers.Login.LoginController.PhoneCode(Angel.Model.Query.LoginQuery)">
+        <member name="M:Angel.Controllers.Login.LoginController.PhoneCode(Angel.Model.Query.LoginQuery)">
             <summary>
             获取手机验证码
             </summary>

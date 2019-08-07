@@ -26,6 +26,7 @@
         "dependencies": {
           "Angel.IServices": "1.0.0",
           "Angel.Model": "1.0.0",
+          "Angel.Services": "1.0.0",
           "Common": "1.0.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
@@ -222,6 +223,19 @@
         },
         "compile": {
           "Angel.Model.dll": {}
+        }
+      },
+      "Angel.Services/1.0.0": {
+        "dependencies": {
+          "Angel.IServices": "1.0.0",
+          "Angel.Model": "1.0.0",
+          "Common": "1.0.0"
+        },
+        "runtime": {
+          "Angel.Services.dll": {}
+        },
+        "compile": {
+          "Angel.Services.dll": {}
         }
       },
       "Common/1.0.0": {
@@ -3527,6 +3541,11 @@
       "sha512": ""
     },
     "Angel.Model/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Angel.Services/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -12423,11 +12423,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Common\\Common.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Common\\Common.csproj",
       "projectName": "Common",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Common\\Common.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Common\\Common.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Common\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Common\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
+using Angel.IServices.ILogin;
+using Angel.Services.Login;
 using Common.Context;
 using Common.DbAccess;
 using Common.Filters;
@@ -32,10 +34,19 @@ namespace Angel
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("allow_all",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
+            });
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
             services.AddScoped<ISqlQuery, SqlQuery>();
             services.AddScoped<ISqlConfig, MsSqlConfig>();
-            services.AddScoped<IUserContext, UserContext>();
+            services.AddSingleton<IUserContext, UserContext>();
+            services.AddScoped<ILoginServices, LoginServices>();
             services.AddSwaggerGenConfig();
         }
 
@@ -55,6 +66,7 @@ namespace Angel
                 app.UseHsts();
             }
 
+            app.UseCors("allow_all");
             app.UseHttpsRedirection();
             app.UseMvc();
         }
@@ -73,15 +85,6 @@ namespace Angel
             {
                 //c.IndexStream = () => GetType().GetTypeInfo().Assembly.GetManifestResourceStream("Sand.UnifiedStorage.Swagger.index.html");
                 c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
-                c.OAuthClientId("js");
-                //c.OAuthAppName("js");
-                c.OAuth2RedirectUrl("http://localhost:50001/swagger/oauth2-redirect.html");
-                //c.OAuthClientSecret("test-secret");
-                //c.OAuthRealm("test-realm");
-                c.OAuthScopeSeparator(" ");
-                c.OAuthUseBasicAuthenticationWithAccessCodeGrant();
-                //c.HeadContent = StartupExtension.AddSandAuthentication();
-                c.DocExpansion(DocExpansion.None);
             });
         }
     }
@@ -98,22 +101,9 @@ namespace Angel
             {
                 c.SwaggerDoc("v1", new Swashbuckle.AspNetCore.Swagger.Info
                 {
-                    Title = "米索医馆系统Api",
+                    Title = "单纯玩玩Api",
+                    Description = "无聊",
                 });
-                c.AddSecurityDefinition("oauth2",
-                    new OAuth2Scheme()
-                    {
-                        Type = "oauth2",
-                        Flow = "implicit",
-                        AuthorizationUrl = "http://localhost:5000/connect/authorize",
-                        //TokenUrl = "http://localhost:5000/connect/token/",
-                        //Description = "勾选授权范围，获取Token",
-                        Scopes = new Dictionary<string, string>(){
-                            { "openid","用户标识" },
-                            { "profile","用户资料" },
-                            { "api1","api"},
-                        }
-                    });
                 //c.OperationFilter<SecurityRequirementsOperationFilter>();
                 c.DocInclusionPredicate((docName, description) => true);
                 var basePath = Directory.GetParent(AppContext.BaseDirectory).FullName;

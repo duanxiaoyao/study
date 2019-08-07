@@ -22,6 +22,7 @@
       <el-form-item>
         <el-button @click="login('form')" style="width:10%">登陆</el-button>
         <el-button @click="register()" style="width:10%">注册</el-button>
+                <el-button @click="ss()" style="width:10%">注册</el-button>
       </el-form-item>
     </el-form>
     <ul>
@@ -42,6 +43,7 @@
 <script>
 import Qs from "qs";
 import axios from "axios";
+import {post} from "./s";
 export default {
   /** 组件名称 */
   name: "Login",
@@ -89,9 +91,14 @@ export default {
     showPwd(value) {
       this.visible = !(value === "show");
     },
+    ss(){
+      var a = post('Login/userExist','1',response =>{
+      console.log(response)
+      })
+    },
     /** 登陆 */
     login(form) {
-      var url = "http://localhost:10000/api/Login";
+      var url = "http://localhost:1111/api/Login/userExist";
       this.$refs[form].validate(valid => {
         if (valid) {
           this.$http

@@ -1,0 +1,17 @@
+C:\Users\Administrator\Desktop\新建文件夹\基础后台框架\Angel.Services\bin\Debug\netcoreapp2.2\Angel.Services.deps.json
+C:\Users\Administrator\Desktop\新建文件夹\基础后台框架\Angel.Services\bin\Debug\netcoreapp2.2\Angel.Services.dll
+C:\Users\Administrator\Desktop\新建文件夹\基础后台框架\Angel.Services\bin\Debug\netcoreapp2.2\Angel.Services.pdb
+C:\Users\Administrator\Desktop\新建文件夹\基础后台框架\Angel.Services\bin\Debug\netcoreapp2.2\Angel.IServices.dll
+C:\Users\Administrator\Desktop\新建文件夹\基础后台框架\Angel.Services\bin\Debug\netcoreapp2.2\Angel.Model.dll
+C:\Users\Administrator\Desktop\新建文件夹\基础后台框架\Angel.Services\bin\Debug\netcoreapp2.2\Common.dll
+C:\Users\Administrator\Desktop\新建文件夹\基础后台框架\Angel.Services\bin\Debug\netcoreapp2.2\Angel.IServices.pdb
+C:\Users\Administrator\Desktop\新建文件夹\基础后台框架\Angel.Services\bin\Debug\netcoreapp2.2\Angel.Model.pdb
+C:\Users\Administrator\Desktop\新建文件夹\基础后台框架\Angel.Services\bin\Debug\netcoreapp2.2\Angel.Model.xml
+C:\Users\Administrator\Desktop\新建文件夹\基础后台框架\Angel.Services\bin\Debug\netcoreapp2.2\Common.pdb
+C:\Users\Administrator\Desktop\新建文件夹\基础后台框架\Angel.Services\obj\Debug\netcoreapp2.2\Angel.Services.csprojAssemblyReference.cache
+C:\Users\Administrator\Desktop\新建文件夹\基础后台框架\Angel.Services\obj\Debug\netcoreapp2.2\Angel.Services.csproj.CoreCompileInputs.cache
+C:\Users\Administrator\Desktop\新建文件夹\基础后台框架\Angel.Services\obj\Debug\netcoreapp2.2\Angel.Services.AssemblyInfoInputs.cache
+C:\Users\Administrator\Desktop\新建文件夹\基础后台框架\Angel.Services\obj\Debug\netcoreapp2.2\Angel.Services.AssemblyInfo.cs
+C:\Users\Administrator\Desktop\新建文件夹\基础后台框架\Angel.Services\obj\Debug\netcoreapp2.2\Angel.Services.csproj.CopyComplete
+C:\Users\Administrator\Desktop\新建文件夹\基础后台框架\Angel.Services\obj\Debug\netcoreapp2.2\Angel.Services.dll
+C:\Users\Administrator\Desktop\新建文件夹\基础后台框架\Angel.Services\obj\Debug\netcoreapp2.2\Angel.Services.pdb

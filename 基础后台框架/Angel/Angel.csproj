@@ -19,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Angel.IServices\Angel.IServices.csproj" />
     <ProjectReference Include="..\Angel.Model\Angel.Model.csproj" />
+    <ProjectReference Include="..\Angel.Services\Angel.Services.csproj" />
     <ProjectReference Include="..\Common\Common.csproj" />
   </ItemGroup>
 

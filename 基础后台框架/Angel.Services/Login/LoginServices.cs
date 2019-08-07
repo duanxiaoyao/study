@@ -1,4 +1,4 @@
-﻿using Angel.IServices;
+﻿using Angel.IServices.ILogin;
 using Angel.Model.Dto;
 using Angel.Model.Query;
 using Common.DbAccess;
@@ -8,7 +8,7 @@ using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Angel.Services
+namespace Angel.Services.Login
 {
     /// <summary>
     /// 账号服务

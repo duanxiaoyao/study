@@ -692,11 +692,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Angel.Model\\Angel.Model.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Angel.Model\\Angel.Model.csproj",
       "projectName": "Angel.Model",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Angel.Model\\Angel.Model.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Angel.Model\\Angel.Model.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Angel.Model\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Angel.Model\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

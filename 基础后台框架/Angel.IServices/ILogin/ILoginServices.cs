@@ -2,7 +2,7 @@
 using System;
 using System.Threading.Tasks;
 
-namespace Angel.IServices
+namespace Angel.IServices.ILogin
 {
     /// <summary>
     /// 账号服务
@@ -36,6 +36,6 @@ namespace Angel.IServices
         /// <param name="loginQuery"></param>
         /// <returns></returns>
         int PhoneCode(LoginQuery loginQuery);
-        
+
     }
 }

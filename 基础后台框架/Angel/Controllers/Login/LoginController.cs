@@ -1,4 +1,4 @@
-﻿using Angel.IServices;
+﻿using Angel.IServices.ILogin;
 using Angel.Model.Query;
 using Common.Base;
 using Microsoft.AspNetCore.Mvc;
@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace HisInterface.Controllers.Login
+namespace Angel.Controllers.Login
 {
     /// <summary>
     /// 账号服务

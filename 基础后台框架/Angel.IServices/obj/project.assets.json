@@ -708,11 +708,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Angel.IServices\\Angel.IServices.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Angel.IServices\\Angel.IServices.csproj",
       "projectName": "Angel.IServices",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Angel.IServices\\Angel.IServices.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Angel.IServices\\Angel.IServices.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Angel.IServices\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Angel.IServices\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -731,8 +731,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Angel.Model\\Angel.Model.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Angel.Model\\Angel.Model.csproj"
+            "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Angel.Model\\Angel.Model.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Angel.Model\\Angel.Model.csproj"
             }
           }
         }

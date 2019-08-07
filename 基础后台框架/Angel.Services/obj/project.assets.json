@@ -12471,11 +12471,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Angel.Services\\Angel.Services.csproj",
+      "projectUniqueName": "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Angel.Services\\Angel.Services.csproj",
       "projectName": "Angel.Services",
-      "projectPath": "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Angel.Services\\Angel.Services.csproj",
+      "projectPath": "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Angel.Services\\Angel.Services.csproj",
       "packagesPath": "C:\\Users\\Administrator\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Angel.Services\\obj\\",
+      "outputPath": "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Angel.Services\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -12494,14 +12494,14 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Angel.IServices\\Angel.IServices.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Angel.IServices\\Angel.IServices.csproj"
+            "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Angel.IServices\\Angel.IServices.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Angel.IServices\\Angel.IServices.csproj"
             },
-            "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Angel.Model\\Angel.Model.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Angel.Model\\Angel.Model.csproj"
+            "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Angel.Model\\Angel.Model.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Angel.Model\\Angel.Model.csproj"
             },
-            "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Common\\Common.csproj": {
-              "projectPath": "C:\\Users\\Administrator\\Desktop\\基础后台框架\\Common\\Common.csproj"
+            "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Common\\Common.csproj": {
+              "projectPath": "C:\\Users\\Administrator\\Desktop\\新建文件夹\\基础后台框架\\Common\\Common.csproj"
             }
           }
         }
