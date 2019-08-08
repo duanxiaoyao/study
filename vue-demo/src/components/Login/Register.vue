@@ -1,8 +1,13 @@
 <template>
   <div class="wrap">
     <el-form :model="form" class="container" ref="form" :rules="rules" status-icon>
-      <el-form-item prop="userName">
-        <el-input v-model="form.userName" auto-complete="off" placeholder="请输入账号" style="width:21%"></el-input>
+      <el-form-item prop="loginCode">
+        <el-input
+          v-model="form.loginCode"
+          auto-complete="off"
+          placeholder="请输入账号"
+          style="width:21%"
+        ></el-input>
       </el-form-item>
       <el-form-item prop="passWord">
         <el-input
@@ -60,8 +65,6 @@
 </template>
 
 <script>
-import Qs from "qs";
-import axios from "axios";
 import { validatePhone, validateIdPassWord } from "./validate";
 export default {
   /** 组件名称 */
@@ -105,7 +108,7 @@ export default {
     return {
       /** 表单数据 */
       form: {
-        userName: "",
+        loginCode: "",
         passWord: "",
         checkPassword: "",
         phone: "",
@@ -115,7 +118,7 @@ export default {
       disabled: true,
       btnTitle: "获取验证码",
       rules: {
-        userName: [{ validator: validateIdName, trigger: "blur" }],
+        loginCode: [{ validator: validateIdName, trigger: "blur" }],
         passWord: [{ validator: validateIdPassWord, trigger: "blur" }],
         checkPassword: [{ validator: checkPassword, trigger: "blur" }],
         phone: [{ validator: validatePhone, trigger: "blur" }],
@@ -135,17 +138,13 @@ export default {
   },
   methods: {
     isExistName(callback) {
-      var url = "http://localhost:10000/api/Login";
-      this.$http
-        .get(url, { params: { id: this.form.userName } })
-        .then(response => {
-          console.log(response);
-          if (response.data) {
-            callback(new Error("账号已存在"));
-          } else {
-            callback();
-          }
-        });
+      this.$request.post("Login/UserExist", this.form, response => {
+        if (response.data == true) {
+          callback(new Error("账号已存在"));
+        } else {
+          callback();
+        }
+      });
     },
     /** 号码正确验证按钮可使用 */
     checkPhone() {
@@ -158,22 +157,10 @@ export default {
     getCode() {
       window.sessionStorage.removeItem("code");
       this.validateBtn();
-      var url = "http://localhost:10000/api/Login/id";
-      this.$http
-        .post(
-          url,
-          Qs.stringify({
-            data: this.form.phone
-          }),
-          {
-            headers: {
-              "Content-type": "application/x-www-form-urlencoded"
-            }
-          }
-        )
-        .then(response => {
-          window.sessionStorage.setItem("code", response.data);
-        });
+      this.$request.post("Login/PhoneCode", this.form, response => {
+        console.log(response)
+        window.sessionStorage.setItem("code", response.data.code);
+      });
     },
     /** 验证码倒计时 */
     validateBtn() {
@@ -193,34 +180,27 @@ export default {
     },
     /** 注册 */
     register(form) {
-      var url = "http://localhost:10000/api/Login/data";
       this.$refs[form].validate(valid => {
         if (valid) {
-          this.$http
-            .post(url, Qs.stringify({ data: this.form }), {
-              headers: {
-                "Content-type": "application/x-www-form-urlencoded"
-              }
-            })
-            .then(response => {
-              if (response.status == "200") {
-                this.$message({
-                  message: "恭喜你，账号注册成功！",
-                  type: "success"
-                });
-                //自动跳转
-                let time = 1;
-                let timer = setInterval(() => {
-                  if (time == 0) {
-                    this.$router.push({
-                      path: "/Home"
-                    });
-                  } else {
-                    time--;
-                  }
-                }, 1000);
-              }
-            });
+          this.$request.post("Login/Register", this.form, response => {
+            if (response.data == true) {
+              this.$message({
+                message: "恭喜你，账号注册成功！",
+                type: "success"
+              });
+              //自动跳转
+              let time = 1;
+              let timer = setInterval(() => {
+                if (time == 0) {
+                  this.$router.push({
+                    path: "/Home"
+                  });
+                } else {
+                  time--;
+                }
+              }, 1000);
+            }
+          });
         } else {
           console.log("error submit!!");
           return false;

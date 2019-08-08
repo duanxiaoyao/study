@@ -59,7 +59,7 @@ namespace Common.DbAccess
         /// <summary>
         /// 
         /// </summary>
-        public DbType DbType { get => DbType.Mssql; }
+        public DbType DbType { get => DbType.Mysql; }
     }
 
 }

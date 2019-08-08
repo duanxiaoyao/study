@@ -2,6 +2,7 @@
 using Angel.Model.Dto;
 using Angel.Model.Query;
 using Common.DbAccess;
+using Microsoft.AspNetCore.Mvc;
 using System;
 using System.IO;
 using System.Net;
@@ -34,10 +35,10 @@ namespace Angel.Services.Login
         /// </summary>
         /// <param name="LoginCode"></param>
         /// <returns></returns>
-        public async Task<bool> UserExist(string LoginCode)
+        public async Task<bool> UserExist([FromBody]LoginQuery loginQuery)
         {
             var sql = "select * from Users where LoginCode=@LoginCode";
-            var data = await _sqlQuery.FirstAsync<LoginDto>(sql, new { LoginCode = LoginCode });
+            var data = await _sqlQuery.FirstAsync<LoginDto>(sql, new { LoginCode = loginQuery.LoginCode });
             if (data == null)
                 return false;
             return true;
@@ -84,8 +85,9 @@ namespace Angel.Services.Login
         /// </summary>
         /// <param name="loginQuery"></param>
         /// <returns></returns>
-        public int PhoneCode(LoginQuery loginQuery)
+        public LoginDto PhoneCode(LoginQuery loginQuery)
         {
+            LoginDto loginDto = new LoginDto();
             string account = "C47841384";//查看用户名 登录用户中心->验证码通知短信>产品总览->API接口信息->APIID
             string password = "8a1134912cc88fa532f9a5d505112114"; //查看密码 登录用户中心->验证码通知短信>产品总览->API接口信息->APIKEY
             string PostUrl = "http://106.ihuyi.com/webservice/sms.php?method=Submit";
@@ -112,8 +114,8 @@ namespace Angel.Services.Login
             newStream.Write(postData, 0, postData.Length);
             newStream.Flush();
             newStream.Close();
-
-            return mobile_code;
+            loginDto.Code = mobile_code;
+            return loginDto;
         }
     }
 }

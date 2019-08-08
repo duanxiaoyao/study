@@ -34,6 +34,11 @@
             创建时间
             </summary>
         </member>
+        <member name="P:Angel.Model.Dto.LoginDto.Code">
+            <summary>
+            验证码
+            </summary>
+        </member>
         <member name="T:Angel.Model.Query.LoginQuery">
             <summary>
             账号查询对象

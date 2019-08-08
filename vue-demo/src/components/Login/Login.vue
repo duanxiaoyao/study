@@ -1,28 +1,28 @@
 <template>
   <div class="wrap">
     <el-form :model="form" class="container" ref="form" :rules="rules">
-      <el-form-item prop="userName">
+      <el-form-item prop="loginCode">
         <!-- <i class="el-icon-user" style="font-size:30px"></i> -->
-        <el-input v-model="form.userName" placeholder="账号" style="width:21%"></el-input>
+        <el-input v-model="form.loginCode" placeholder="账号" style="width:21%"></el-input>
       </el-form-item>
       <el-form-item v-if="visible" prop="passWord">
         <!-- <i class="el-icon-lock" style="font-size:30px"></i> -->
         <el-input type="password" v-model="form.passWord" placeholder="密码" style="width:21%"></el-input>
         <span class="show-pwd" @click="showPwd('show')">
-          <svg-icon icon-class="eye"/>
+          <svg-icon icon-class="eye" />
         </span>
       </el-form-item>
       <el-form-item v-else prop="passWord">
         <!-- <i class="el-icon-lock" style="font-size:30px"></i> -->
         <el-input type="text" v-model="form.passWord" placeholder="密码" style="width:21%"></el-input>
         <span class="show-pwd" @click="showPwd('hide')">
-          <svg-icon icon-class="eye-open"/>
+          <svg-icon icon-class="eye-open" />
         </span>
       </el-form-item>
       <el-form-item>
         <el-button @click="login('form')" style="width:10%">登陆</el-button>
         <el-button @click="register()" style="width:10%">注册</el-button>
-                <el-button @click="ss()" style="width:10%">注册</el-button>
+        <el-button @click="ss()" style="width:10%">注册</el-button>
       </el-form-item>
     </el-form>
     <ul>
@@ -41,9 +41,6 @@
 </template>
 
 <script>
-import Qs from "qs";
-import axios from "axios";
-import {post} from "./s";
 export default {
   /** 组件名称 */
   name: "Login",
@@ -66,11 +63,11 @@ export default {
     return {
       /** 表单数据 */
       form: {
-        userName: "",
+        loginCode: "",
         passWord: ""
       },
       rules: {
-        userName: [{ validator: validateIdName, trigger: "blur" }],
+        loginCode: [{ validator: validateIdName, trigger: "blur" }],
         passWord: [{ validator: validateIdPassWord, trigger: "blur" }]
       },
       visible: true
@@ -91,48 +88,33 @@ export default {
     showPwd(value) {
       this.visible = !(value === "show");
     },
-    ss(){
-      var a = post('Login/userExist','1',response =>{
-      console.log(response)
-      })
+    ss() {
+      console.log(this.form)
+      this.$request.post("Login/userExist", this.form, response => {
+        console.log(response);
+      });
     },
     /** 登陆 */
     login(form) {
-      var url = "http://localhost:1111/api/Login/userExist";
       this.$refs[form].validate(valid => {
         if (valid) {
-          this.$http
-            .post(
-              url,
-              Qs.stringify({
-                userName: this.form.userName,
-                passWord: this.form.passWord
-              }),
-              {
-                headers: {
-                  "Content-type": "application/x-www-form-urlencoded"
-                }
-              }
-            )
-            .then(response => {
-              if(response.data == true)
-              {
+          this.$request
+            .post("Login/CheckUser", this.form, response => {
+              if (response.data == true) {
                 this.$message({
                   message: "欢迎来到德莱联盟！",
                   type: "success"
                 });
                 this.$router.push({
-                  path:'/Home'
-                })
-              }
-              else
-              {
+                  path: "/Home"
+                });
+              } else {
                 this.$message({
                   message: "账号或密码错误！",
                   type: "info"
                 });
               }
-            });
+            })
         } else {
           console.log("error submit!!");
           return false;

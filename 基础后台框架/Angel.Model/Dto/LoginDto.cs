@@ -29,5 +29,9 @@ namespace Angel.Model.Dto
         /// 创建时间
         /// </summary>
         public DateTime DateTime { get; set; }
+        /// <summary>
+        /// 验证码
+        /// </summary>
+        public int Code { get; set; }
     }
 }

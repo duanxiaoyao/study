@@ -1,4 +1,5 @@
-﻿using Angel.Model.Query;
+﻿using Angel.Model.Dto;
+using Angel.Model.Query;
 using System;
 using System.Threading.Tasks;
 
@@ -12,9 +13,9 @@ namespace Angel.IServices.ILogin
         /// <summary>
         /// 注册账号是否存在
         /// </summary>
-        /// <param name="LoginCode"></param>
+        /// <param name="loginQuery"></param>
         /// <returns></returns>
-        Task<bool> UserExist(string LoginCode);
+        Task<bool> UserExist(LoginQuery loginQuery);
 
         /// <summary>
         /// 账号登陆验证
@@ -35,7 +36,6 @@ namespace Angel.IServices.ILogin
         /// </summary>
         /// <param name="loginQuery"></param>
         /// <returns></returns>
-        int PhoneCode(LoginQuery loginQuery);
-
+        LoginDto PhoneCode(LoginQuery loginQuery);
     }
 }

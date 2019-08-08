@@ -29,12 +29,12 @@ namespace Angel.Controllers.Login
         /// <summary>
         /// 注册账号是否存在
         /// </summary>
-        /// <param name="LoginCode">账号</param>
+        /// <param name="loginQuery"></param>
         /// <returns></returns>
         [HttpPost("userExist")]
-        public async Task<IActionResult> UserExist(string LoginCode)
+        public async Task<IActionResult> UserExist(LoginQuery loginQuery)
         {
-            var data = await _loginServices.UserExist(LoginCode);
+            var data = await _loginServices.UserExist(loginQuery);
             return Success(data);
         }
 
