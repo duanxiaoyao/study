@@ -20,10 +20,6 @@ export default new Router({
           meta: {
             title: '系统首页'
           }
-        },
-        {
-          path: '/home',
-          component: resolve => require(['../components/Home/Home.vue'], resolve),
         }
       ]
     },

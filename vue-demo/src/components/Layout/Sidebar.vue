@@ -39,7 +39,7 @@
                 collapse: false,
                 items: [
                     {
-                        icon: 'el-icon-lx-home',
+                        icon: 'el-icon-lx-cascades',
                         index: 'dashboard',
                         title: '系统首页'
                     },
